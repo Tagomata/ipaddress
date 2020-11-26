@@ -1,13 +1,123 @@
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  font-family: "Rubik", sans-serif;
+  font-size: 18px;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.body-background {
+  background-image: url(/src/assets/pattern-bg.png);
+  background-repeat: no-repeat;
+  background-size: 100% 40%;
+}
+
+#root {
+  width: 100%;
+  height: 100%;
+}
+
+h1 {
+  color: white;
+  text-align: center;
+  font-weight: 700;
+  margin: 0.67em 0;
+}
+.contenedor-busqueda {
+  background-image: "./assets/pattern-bg.png";
+
+  background-size: cover;
+  max-height: 300px;
+}
+
+.contenedor-busqueda-centro {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding: 0 2em;
+  box-sizing: border-box;
+}
+
+#formulario {
+  min-width: 40%;
+}
+
+.busqueda {
+  display: flex;
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+#input-ip {
+  width: 88%;
+  font-size: 100%;
+  margin: 0;
+  padding-left: 10px;
+}
+
+.btn-busqueda {
+  padding: 15px;
+  border: none;
+  font-size: 100%;
+  margin: 0;
+  background-color: hsl(0, 0%, 17%);
+  color: white;
+  cursor: pointer;
+  width: 12%;
+}
+
+.btn-busqueda span {
+  padding-bottom: 15px;
+}
+
+.contenedor-info {
+  background-color: white;
+  padding: 30px 25px;
+  box-sizing: border-box;
+  border-radius: 11px;
+  display: flex;
+  position: relative;
+  z-index: 100;
+  margin-top: 0;
+  transform: translateY(50%);
+  box-shadow: 0 20px 30px 2px rgba(0, 0, 0, 0.1);
+  min-width: 80%;
+}
+
+.info-column {
+  flex: 1;
+}
+.info-column span {
+  display: block;
+}
+
+.info-titulo {
+  font-size: 0.75em;
+  font-weight: 500;
+  margin-bottom: 0.75em;
+  color: hsl(0, 0%, 59%);
+}
+
+.info-descripcion {
+  font-weight: 700;
+  color: hsl(0, 0%, 17%);
+}
+
+#map {
+  position: absolute;
+  min-height: 70vh;
+  width: 100vw;
+  z-index: 10;
+}
+
+.leaflet-container {
+  width: 100%;
+  height: 74.5vh;
+}
+
+.alerta {
+  background-color: white;
+  border-radius: 10px;
+  text-align: center;
+  color: red;
+  border-color: red;
+  font-weight: 500;
 }
